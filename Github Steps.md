@@ -9,3 +9,4 @@
    1. Local Path: Make new folder on PC and link to this folder
    2. Clone
    3. Work in this directory or copy-paste the files
+4. Update met GitHub Desktop

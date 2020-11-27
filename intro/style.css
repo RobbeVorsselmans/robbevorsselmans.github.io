@@ -14,6 +14,7 @@ body {
 
 h1 {
     font-family: 'Kalam', cursive;
+    text-align: center;
 }
 
 #vue {
@@ -107,16 +108,15 @@ input {
     width: 60px;
     border-radius: 10px;
     border: 0;
-    padding: 10px;
+    padding: 7px;
     font-size: 1.2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-left: 4px;
 }
 
 button {
-    margin-top: 10px;
     background-color: rgb(2, 84, 138);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     color: white;
     border-width: 0;
