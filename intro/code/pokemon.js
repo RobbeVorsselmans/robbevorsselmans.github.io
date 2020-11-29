@@ -43,6 +43,12 @@ let app = new Vue({
                     levelMoves.push({ level: moveFr.level_learned_at, name: move.move.name })
                 }
             });
+            // opgave: eerste 5 aanvallen weergeven
+            if (levelMoves.length < 5) {
+                for (let i = levelMoves.length; i < 5; i++) {
+                    levelMoves.push({ level: 99, name: "Onbekend" })
+                }
+            }
             return levelMoves.sort((a, b) => a.level - b.level)
         },
         flavor() {
