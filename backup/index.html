@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robbe Vorsselmans</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=PT+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Welkom!</h1>
+        <p>Klik op een van onderstaande links om naar een specifieke pagina te gaan.</p>
+    </header>
+    <main>
+        <ul>
+            <li>
+                <a _target="file" href="Opgave Websites Bouwen met HTML en CSS - Pokedex.pdf">
+                    Pokédex (Opgave)
+                </a>
+            </li>
+            <li>
+                <a href="https://robbevorsselmans.github.io/intro">
+                    Pokédex (Voorbeeld)
+                </a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        © Robbe Vorsselmans
+    </footer>
+</body>
+
+<style>
+    body {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 700;
+        font-size: 16pt;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #eeeeee 80%, #a5a5a5 100%);
+    }
+    
+    main {
+        padding-bottom: 2.5rem;
+        /* Footer height */
+    }
+    
+    li {
+        margin: 10px 0;
+    }
+    
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
+        font-size: 70%;
+        color: rgba(0, 0, 0, .75);
+    }
+    
+    h1 {
+        font-family: 'PT Serif', serif;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+    }
+</style>
+
+</html>
