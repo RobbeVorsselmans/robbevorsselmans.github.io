@@ -82,14 +82,9 @@ function createIndices(start, length) {
 }
 
 function checkWin() {
-    if (aRow + cRow == worldHeight - 1) {
+    if (aRow + cRow == worldHeight - 1 && !isWin) {
         console.log("You win!");
         isWin = true
-        aRow = 0
-        aCol = 0
-        cRow = 0
-        cCol = 1
-
         score++
         scoreField.html('Score: ' + score)
     }
@@ -99,6 +94,10 @@ function increaseLevel() {
     level++
     Maze = Mazes[level - 1]
     isNewLevel = true
+    aRow = 0
+    aCol = 0
+    cRow = 0
+    cCol = 1
 }
 
 function showUI() {
