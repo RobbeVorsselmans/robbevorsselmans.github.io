@@ -17,14 +17,12 @@ let animationDuration = 2
 let animationTimer = 0
 let Maze = Mazes[level - 1]
 let scoreField
+let score = 0
 
 function setup() {
     matrix.init()
     frameRate(fps)
     scoreField = select('#score')
-    console.log('scoreField:', scoreField);
-    let score = 5
-    score++
     scoreField.html('Score: ' + score)
 }
 
@@ -91,6 +89,9 @@ function checkWin() {
         aCol = 0
         cRow = 0
         cCol = 1
+
+        score++
+        scoreField.html('Score: ' + score)
     }
 }
 
